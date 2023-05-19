@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardView" customModule="AndikaTechnicalApp" customModuleProvider="target">
+            <connections>
+                <outlet property="profileView" destination="WtC-fU-242" id="pfA-hm-G0k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower-fix" translatesAutoresizingMaskIntoConstraints="NO" id="2t0-KM-5vx">
+                    <rect key="frame" x="100" y="0.0" width="290" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Fmf-fS-zbQ"/>
+                        <constraint firstAttribute="width" secondItem="2t0-KM-5vx" secondAttribute="height" multiplier="2.9:1" id="tJB-1c-ozm"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d4W-iy-79Y">
+                    <rect key="frame" x="238" y="47" width="136" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P90-nB-1do" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="buf-cf-aJE"/>
+                                <constraint firstAttribute="width" constant="40" id="zbT-8o-24p"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="whatsapp"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAx-S7-MWK" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                            <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="S0t-nr-FAL"/>
+                                <constraint firstAttribute="width" constant="40" id="Z5S-If-IfP"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="notif"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQD-YM-PJQ" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                            <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CSK-G7-exH"/>
+                                <constraint firstAttribute="width" constant="40" id="c6C-AT-leG"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="setting"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-x0-gS5">
+                    <rect key="frame" x="0.0" y="100" width="390" height="710"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7g-Lk-noz">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="600"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="lo3-XZ-bpe">
+                                    <rect key="frame" x="101.66666666666666" y="0.0" width="288.33333333333337" height="212"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="212" id="Nzs-VS-WAM"/>
+                                        <constraint firstAttribute="width" secondItem="lo3-XZ-bpe" secondAttribute="height" multiplier="1.36:1" id="nGV-iv-5H8"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andika-logo" translatesAutoresizingMaskIntoConstraints="NO" id="87q-hB-Xhi">
+                                    <rect key="frame" x="16" y="62" width="161" height="75"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="87q-hB-Xhi" secondAttribute="height" multiplier="161:75" id="pHH-Kb-YsM"/>
+                                        <constraint firstAttribute="height" constant="75" id="uri-cr-FfN"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-ico" translatesAutoresizingMaskIntoConstraints="NO" id="WtC-fU-242">
+                                    <rect key="frame" x="32" y="212" width="40" height="40"/>
+                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="CDh-mw-evv"/>
+                                        <constraint firstAttribute="width" constant="40" id="Qng-QM-VNF"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pemilik Kartu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9b-PJ-NF5">
+                                    <rect key="frame" x="80" y="212" width="89.666666666666686" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andika Mahardika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyN-qz-tCV">
+                                    <rect key="frame" x="80" y="232" width="114.66666666666669" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.53958601799999995" green="0.53958601799999995" blue="0.53958601799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-dq-TMy">
+                                    <rect key="frame" x="198.66666666666666" y="231" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="BNU-6g-TTk"/>
+                                        <constraint firstAttribute="width" constant="15" id="kwP-mp-kwu"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="y9b-PJ-NF5" firstAttribute="top" secondItem="lo3-XZ-bpe" secondAttribute="bottom" id="1QR-jc-HZw"/>
+                                <constraint firstItem="87q-hB-Xhi" firstAttribute="leading" secondItem="m7g-Lk-noz" secondAttribute="leading" constant="16" id="3cN-PR-Ysb"/>
+                                <constraint firstAttribute="height" constant="600" id="5x5-VV-5Cl"/>
+                                <constraint firstItem="LyN-qz-tCV" firstAttribute="top" secondItem="y9b-PJ-NF5" secondAttribute="bottom" constant="2" id="7t8-FL-qQJ"/>
+                                <constraint firstItem="vMt-dq-TMy" firstAttribute="top" secondItem="lo3-XZ-bpe" secondAttribute="bottom" constant="19" id="8ve-Yd-F2Y"/>
+                                <constraint firstItem="LyN-qz-tCV" firstAttribute="leading" secondItem="WtC-fU-242" secondAttribute="trailing" constant="8" symbolic="YES" id="OlL-WW-BPc"/>
+                                <constraint firstItem="lo3-XZ-bpe" firstAttribute="top" secondItem="m7g-Lk-noz" secondAttribute="top" id="RCM-7F-lmQ"/>
+                                <constraint firstItem="y9b-PJ-NF5" firstAttribute="leading" secondItem="WtC-fU-242" secondAttribute="trailing" constant="8" symbolic="YES" id="Ws8-dd-5VD"/>
+                                <constraint firstAttribute="trailing" secondItem="lo3-XZ-bpe" secondAttribute="trailing" id="fpP-hS-5qx"/>
+                                <constraint firstItem="87q-hB-Xhi" firstAttribute="top" secondItem="m7g-Lk-noz" secondAttribute="top" constant="62" id="nKK-2F-8uq"/>
+                                <constraint firstItem="vMt-dq-TMy" firstAttribute="leading" secondItem="LyN-qz-tCV" secondAttribute="trailing" constant="4" id="x6t-gV-YV2"/>
+                                <constraint firstItem="WtC-fU-242" firstAttribute="top" secondItem="lo3-XZ-bpe" secondAttribute="bottom" id="xaI-94-Z0B"/>
+                                <constraint firstItem="WtC-fU-242" firstAttribute="leading" secondItem="m7g-Lk-noz" secondAttribute="leading" constant="32" id="yh5-1a-RJQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="m7g-Lk-noz" secondAttribute="trailing" id="0YX-2n-Hjf"/>
+                        <constraint firstItem="m7g-Lk-noz" firstAttribute="top" secondItem="IVY-x0-gS5" secondAttribute="top" id="2tI-EB-2H5"/>
+                        <constraint firstItem="m7g-Lk-noz" firstAttribute="leading" secondItem="IVY-x0-gS5" secondAttribute="leading" id="B1z-Hh-iCG"/>
+                        <constraint firstAttribute="bottom" secondItem="m7g-Lk-noz" secondAttribute="bottom" id="Kfw-1N-ggf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d4W-iy-79Y" secondAttribute="trailing" constant="16" id="8QV-NF-mbU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2t0-KM-5vx" secondAttribute="trailing" id="A8a-HT-biu"/>
+                <constraint firstItem="IVY-x0-gS5" firstAttribute="top" secondItem="2t0-KM-5vx" secondAttribute="bottom" id="AgY-NW-2mp"/>
+                <constraint firstItem="IVY-x0-gS5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="G0v-dK-pgR"/>
+                <constraint firstItem="d4W-iy-79Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ScO-W6-6GH"/>
+                <constraint firstItem="m7g-Lk-noz" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="fh4-9p-MDA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IVY-x0-gS5" secondAttribute="bottom" id="gOf-OU-gtp"/>
+                <constraint firstItem="2t0-KM-5vx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jnO-RB-9Jj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IVY-x0-gS5" secondAttribute="trailing" id="jqK-Cg-AZH"/>
+            </constraints>
+            <point key="canvasLocation" x="121.53846153846153" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="P90-nB-1do">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="pQD-YM-PJQ">
+            <size key="intrinsicContentSize" width="38" height="44"/>
+        </designable>
+        <designable name="sAx-S7-MWK">
+            <size key="intrinsicContentSize" width="40" height="43"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="andika-logo" width="328" height="103"/>
+        <image name="arrow-down" width="19" height="12"/>
+        <image name="avatar-ico" width="80" height="80"/>
+        <image name="bg3" width="430" height="306"/>
+        <image name="flower-fix" width="430" height="146"/>
+        <image name="notif" width="40" height="43"/>
+        <image name="setting" width="38" height="44"/>
+        <image name="whatsapp" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Lc-9W-D8l">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AndikaTechnicalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="K2W-sH-Th2">
+                                <rect key="frame" x="193.33333333333337" y="0.0" width="181.66666666666663" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="EZ9-ca-Jdm"/>
+                                    <constraint firstAttribute="width" secondItem="K2W-sH-Th2" secondAttribute="height" multiplier="1:1.1" id="ttz-MG-Ygi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="iPH-EN-CNo">
+                                <rect key="frame" x="0.0" y="658" width="375" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="YOe-o5-sGp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andika-icon" translatesAutoresizingMaskIntoConstraints="NO" id="CFl-pB-s3e">
+                                <rect key="frame" x="112.66666666666669" y="291" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1WJ-YE-634"/>
+                                    <constraint firstAttribute="width" constant="150" id="BUG-iG-djh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byG-dC-HiC" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="505" width="327" height="50"/>
+                                <color key="backgroundColor" name="pink-red"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Sg-bq-uby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Masuk">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLoginOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCp-gk-jQw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-pT-4bR" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="571" width="327" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fkn-oc-Ldp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Daftar">
+                                    <color key="titleColor" name="pink-red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="pink-red"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iPH-EN-CNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fW-VH-Duw"/>
+                            <constraint firstItem="DUP-pT-4bR" firstAttribute="top" secondItem="byG-dC-HiC" secondAttribute="bottom" constant="16" id="8UP-7j-SwM"/>
+                            <constraint firstItem="DUP-pT-4bR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Ayv-QS-6bg"/>
+                            <constraint firstItem="byG-dC-HiC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Cjt-pm-plf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPH-EN-CNo" secondAttribute="trailing" id="Mlc-E7-txB"/>
+                            <constraint firstItem="byG-dC-HiC" firstAttribute="top" secondItem="CFl-pB-s3e" secondAttribute="bottom" constant="64" id="Yh5-xQ-hnt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byG-dC-HiC" secondAttribute="trailing" constant="24" id="a3X-KL-deW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DUP-pT-4bR" secondAttribute="trailing" constant="24" id="cCU-IC-NfL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K2W-sH-Th2" secondAttribute="trailing" id="fWF-Xi-h1E"/>
+                            <constraint firstItem="K2W-sH-Th2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g31-BI-Uhg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iPH-EN-CNo" secondAttribute="bottom" id="h1g-K9-D7G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K2W-sH-Th2" secondAttribute="trailing" id="o6V-Vy-vDh"/>
+                            <constraint firstItem="CFl-pB-s3e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="oIK-Ho-sSz"/>
+                            <constraint firstItem="CFl-pB-s3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oN4-oY-OUp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RJt-yn-Cbi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="11.822660098522167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tPS-zD-nV7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Lc-9W-D8l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95W-TC-XSh">
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PMg-FY-qjV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5i-DI-TFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="11.822660098522167"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="DUP-pT-4bR">
+            <size key="intrinsicContentSize" width="47" height="30"/>
+        </designable>
+        <designable name="byG-dC-HiC">
+            <size key="intrinsicContentSize" width="49" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="andika-icon" width="372" height="418"/>
+        <image name="bg1" width="430" height="452"/>
+        <image name="bg2" width="720" height="258"/>
+        <namedColor name="pink-red">
+            <color red="0.96078431372549022" green="0.21176470588235294" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

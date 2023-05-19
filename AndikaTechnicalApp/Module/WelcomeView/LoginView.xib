@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="AndikaTechnicalApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-K7-VLC">
+                    <rect key="frame" x="208.33333333333337" y="0.0" width="181.66666666666663" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="b7h-cg-rl3"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="NGv-9U-C8E">
+                    <rect key="frame" x="0.0" y="665" width="390" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="pIr-CB-8aD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masuk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mW-py-Yvf">
+                    <rect key="frame" x="24" y="224" width="60" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukkan alamat email terdaftar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs8-u7-6cy">
+                    <rect key="frame" x="24" y="263" width="342" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F8K-gZ-Q78">
+                    <rect key="frame" x="24" y="340.66666666666669" width="342" height="163"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk3-Jk-hxt">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" name="pink-red"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="andika@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-bU-0Q0" customClass="MyTextField" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="43" width="342" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9nQ-Dd-02r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="pink-red"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qas-vo-VOc" customClass="MyButton" customModule="AndikaTechnicalApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="113" width="342" height="50"/>
+                            <color key="backgroundColor" name="pink-red"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="xfj-Mk-Q1L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Masuk">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Bi2-PD-JAA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiD-X8-An5">
+                    <rect key="frame" x="16" y="63" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WKC-cK-nBg"/>
+                        <constraint firstAttribute="width" constant="40" id="wdf-kx-6HG"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="mJR-kY-y00"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7UC-K7-VLC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0KR-Wt-cDE"/>
+                <constraint firstItem="NGv-9U-C8E" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="CKf-za-6GI"/>
+                <constraint firstItem="KiD-X8-An5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="HMq-uX-UD3"/>
+                <constraint firstItem="NGv-9U-C8E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IDz-rW-ky0"/>
+                <constraint firstItem="7UC-K7-VLC" firstAttribute="width" secondItem="7UC-K7-VLC" secondAttribute="height" multiplier="1:1.1" id="KL7-T7-TpF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rs8-u7-6cy" secondAttribute="trailing" constant="24" id="LmH-pd-qfb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7UC-K7-VLC" secondAttribute="trailing" id="M8x-Vk-FbE"/>
+                <constraint firstItem="rs8-u7-6cy" firstAttribute="top" secondItem="9mW-py-Yvf" secondAttribute="bottom" constant="16" id="NBl-eP-ZZI"/>
+                <constraint firstItem="rs8-u7-6cy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Q0e-wa-OGn"/>
+                <constraint firstItem="F8K-gZ-Q78" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Q4S-3t-ykW"/>
+                <constraint firstItem="KiD-X8-An5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Si7-EK-kZl"/>
+                <constraint firstItem="9mW-py-Yvf" firstAttribute="top" secondItem="7UC-K7-VLC" secondAttribute="bottom" constant="24" id="eVN-M3-7wu"/>
+                <constraint firstItem="F8K-gZ-Q78" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fqG-Tk-HCA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F8K-gZ-Q78" secondAttribute="trailing" constant="24" id="gMB-Uc-fCx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NGv-9U-C8E" secondAttribute="trailing" id="mLl-jB-90c"/>
+                <constraint firstItem="9mW-py-Yvf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="qDd-nx-n4k"/>
+            </constraints>
+            <point key="canvasLocation" x="127" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="H9t-bU-0Q0">
+            <size key="intrinsicContentSize" width="137" height="21"/>
+        </designable>
+        <designable name="Qas-vo-VOc">
+            <size key="intrinsicContentSize" width="49" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back" width="36" height="36"/>
+        <image name="bg1" width="430" height="452"/>
+        <image name="bg2" width="720" height="258"/>
+        <namedColor name="pink-red">
+            <color red="0.96078431372549022" green="0.21176470588235294" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

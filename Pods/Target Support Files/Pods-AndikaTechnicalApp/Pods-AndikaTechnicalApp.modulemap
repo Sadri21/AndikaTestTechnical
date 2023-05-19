@@ -1,0 +1,6 @@
+framework module Pods_AndikaTechnicalApp {
+  umbrella header "Pods-AndikaTechnicalApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
